@@ -1,16 +1,17 @@
 import { useState } from "react";
 
 const userData = {
-  name: "Elmer Alvarado",
-  avatarUrl: "https://i.pravatar.cc/100",
-  bio: "Appdev1 instructor.",
-  skills: ["React", "JavaScript", "HTML", "CSS"],
+  name: "Karl Ashton L. Mahusay",
+  avatarUrl: "https://github.com/itooonn.png",
+  bio: "BSIS 3 Student",
+  skills: ["HTML", "CSS"],
   isOnline: true,
-  lastUpdated: "2 hours ago",
+  lastUpdated: "1 minute ago",
 };
 
 function UserProfileCard({ user }) {
   const [messageCount, setMessageCount] = useState(0);
+  const [isFavorited, setIsFavorited] = useState();
 
   function handleSendMessage() {
     setMessageCount(messageCount + 1);
@@ -20,9 +21,19 @@ function UserProfileCard({ user }) {
     setMessageCount(0);
   }
 
+  function handleToggleFavorite() {
+    setIsFavorited(!isFavorited);
+  }
+
   return (
     <div className="profile-card">
-      <img src={userData.avatarUrl} />
+      <img
+      src={userData.avatarUrl}
+      style={{
+        width: "250px",
+        height: "250px",
+      }}
+      />
 
       <h2>{userData.name}</h2>
 
@@ -42,8 +53,18 @@ function UserProfileCard({ user }) {
 
       {userData.isOnline ? <span>🟢 Online</span> : <span>⚪ Offline</span>}
 
-      <button onClick={handleSendMessage}>Send Message</button>
-      <button onClick={handleReset}>Reset</button>
+      <button style={{ margin: "4px" }} onClick={handleSendMessage}>
+        Send Message
+      </button>
+      <button style={{ margin: "4px" }} onClick={handleReset}>
+        Reset
+      </button>
+
+      {userData.isOnline && (
+        <button style={{ margin: "4px" }} onClick={handleToggleFavorite}>
+          {isFavorited ? "☆ Favorite" : "★ Favorited"}
+        </button>
+      )}
 
       <p className="footer">Card last updated: {userData.lastUpdated}</p>
     </div>
