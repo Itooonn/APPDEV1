@@ -1,0 +1,20 @@
+Analyze the following two files only: src/App.css and src/components/tracks/SongList.css.
+
+Scope constraints:
+
+Only modify these two files. Do not create, delete, or rename any files.
+Do not touch any other CSS, JS, JSX, TS, TSX, or HTML files.
+Solution must be achieved purely with CSS — no new markup, no new components, no JS logic changes.
+
+Design goal — "Retro Desktop" theme:
+
+Restyle the app so the overall layout resembles an old-school desktop computer (CRT monitor / beige tower aesthetic, or a modern minimalist desktop mockup — your choice of styling details, but keep it cohesive).
+The song playlist (SongList) content should visually appear to be displayed inside the computer's screen — i.e., nested within a monitor-shaped frame/bezel, as if it's the "screen content" of the desktop illustration.
+Move/restructure the SongList content so it renders inside a tab component (assume a tab UI already exists or use CSS to simulate tab-like navigation/styling — clarify if a tab component needs to be referenced by class name).
+
+Deliverables:
+
+Updated App.css with the desktop/monitor frame styling and layout structure needed to house the tabbed screen.
+Updated SongList.css with styling so its content fits naturally within the "screen" area and tab.
+Preserve existing class names and selectors where possible; only add new rules or modify values as needed to achieve the visual goal.
+Briefly explain what changed and why at the end.
