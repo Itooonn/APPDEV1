@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Script Basics</title>
+</head>
+<body>
+    <h1>Kain po tayo, Team Ryzza!</h1>
+
+<script>
+    console.log("Hello from inline script!");
+</script>
+
+<!-- 2. Classic external script -->
+<script src="legacy.js"></script>
+
+<!-- 3. Module external script -->
+<script type="module" src="app.js"></script>
+
+<!-- 4. Inline module -->
+<script type="module">
+    import { nowPlaying } from "./15_modules_export.js"
+ 
+    console.log(nowPlaying());  
+</script>
+
+</body>
+</html>
