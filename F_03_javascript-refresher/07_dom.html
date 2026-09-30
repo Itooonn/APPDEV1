@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        p {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <button id="changeColorBtn">Change Background Color</button>
+    <p id="message">Pwede pong magtanong?</p>
+ 
+    <script>
+        const button = document.getElementById("changeColorBtn");
+        button.addEventListener("click", () => {
+        const color = prompt("What color should the background be?");
+        document.body.style.backgroundColor = color;
+        });
+    
+        const message = document.getElementById("message");
+        setTimeout(() => {
+        message.textContent = "Never grow old?";
+        }, 2000);
+    </script>
+</body>
+</html>
