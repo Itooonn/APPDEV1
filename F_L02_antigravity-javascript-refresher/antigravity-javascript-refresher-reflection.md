@@ -34,3 +34,19 @@ Your goal is to: Do not modify the file, rather explain each function to me and 
 
 Reflection:
 In this exercise, instead of making changes on the file, I let the AI to instead explain things for me. I prompted to explain the differences of each type of functions inside the file. I learned that there are two type of function inside the file. The traditional function declaration and the arrow function. The difference is that the traditional is hoisted, meaning that you need to call the function name first before it can be defined and work. The arrow function in the otherhand is stored inside a variable, which makes it modern and and shorter, compact and cleaner in the code. The arrow function is also not hoisted so you need to define them first before you can use them.
+
+### 04_objects.js
+Prompt:
+Use @04_objects.js, I want you to edit the file according to my requirements
+
+requirements:
+- add an another method inside aboutMe object
+- add an another property outside aboutMe object
+- the method should be about how I like coding, create a simple paragraph about it
+- the new property must be address
+- call the new function
+
+Let me review the changes first and once i told you to edit, edit it in one go.
+
+Reflection:
+In this exercise I learned how to utilize the AI in create a paragraph for me. I also used it to do the workflow i've created under the requirements and it does what I'd expected. This shows how flexible this AI is because inside the prompt I did not give it a paragraph and only give it a simple command.
