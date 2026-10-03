@@ -50,3 +50,10 @@ Let me review the changes first and once i told you to edit, edit it in one go.
 
 Reflection:
 In this exercise I learned how to utilize the AI in create a paragraph for me. I also used it to do the workflow i've created under the requirements and it does what I'd expected. This shows how flexible this AI is because inside the prompt I did not give it a paragraph and only give it a simple command.
+
+### 05_arrays.js
+Prompt:
+Use the file @[05_arrays.js] do not edit it. Explain each part to me
+
+Reflection:
+I learned push and shift, push adds new item at the last and shift removes the first item at the start.
