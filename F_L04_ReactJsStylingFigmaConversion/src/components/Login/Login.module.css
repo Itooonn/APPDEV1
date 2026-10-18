@@ -3,7 +3,7 @@
     width: 86vw;
     height: 82vh;
     min-height: 600px;
-    background: #a9c0f0;
+    background: var(--color-secondary-bg);
     overflow: hidden;
 }
 
@@ -18,15 +18,15 @@
 
 .tagline {
     align-self: flex-start;
-    font-size: 42px;
+    font-size: var(--font-size-tagline);
     font-weight: 300;
     line-height: 1.25;
-    color: #fff;
+    color: var(--color-white);
 }
 
 .tagline strong {
     font-weight: 700;
-    color: #5b86e5;
+    color: var(--color-primary);
 }
 
 .logo {
@@ -38,9 +38,9 @@
 }
 
 .link {
-    font-size: 16px;
-    letter-spacing: 1px;
-    color: #fff;
+    font-size: var(--font-size-base);
+    letter-spacing: var(--letter-spacing);
+    color: var(--color-white);
 }
 
 /* ---------- Right panel ---------- */
@@ -49,8 +49,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #fff;
-    border-radius: 60px 0 0 60px;
+    background: var(--color-white);
+    border-radius: var(--radius-panel) 0 0 var(--radius-panel);
 }
 
 .form {
@@ -59,9 +59,9 @@
 }
 
 .form h2 {
-    font-size: 28px;
+    font-size: var(--font-size-heading);
     font-weight: 700;
-    letter-spacing: 1px;
+    letter-spacing: var(--letter-spacing);
     margin-bottom: 110px;
 }
 
@@ -71,45 +71,45 @@
     padding: 18px 0 14px;
     margin-bottom: 28px;
     border: none;
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid var(--color-border);
     outline: none;
     font-family: inherit;
-    font-size: 16px;
-    letter-spacing: 1px;
+    font-size: var(--font-size-base);
+    letter-spacing: var(--letter-spacing);
 }
 
 .form input::placeholder {
-    color: #9a9a9a;
+    color: var(--color-placeholder);
 }
 
 .form input:focus {
-    border-bottom-color: #5b86e5;
+    border-bottom-color: var(--color-primary);
 }
 
 .form button {
     width: 100%;
-    height: 60px;
+    height: var(--btn-height);
     margin-top: 16px;
     border: none;
-    border-radius: 8px;
-    background: #5b86e5;
-    color: #fff;
+    border-radius: var(--radius-btn);
+    background: var(--color-primary);
+    color: var(--color-white);
     font-family: inherit;
-    font-size: 16px;
+    font-size: var(--font-size-base);
     font-weight: 700;
-    letter-spacing: 1px;
+    letter-spacing: var(--letter-spacing);
     cursor: pointer;
 }
 
 .signup {
     margin-top: 24px;
     text-align: center;
-    font-size: 16px;
-    letter-spacing: 1px;
+    font-size: var(--font-size-base);
+    letter-spacing: var(--letter-spacing);
 }
 
 .signup a {
-    color: #5b86e5;
+    color: var(--color-primary);
     font-weight: 700;
     text-decoration: none;
 }

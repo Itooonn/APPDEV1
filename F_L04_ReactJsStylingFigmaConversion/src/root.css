@@ -1,0 +1,21 @@
+:root {
+  /* Colors */
+  --color-primary: #5b86e5;
+  --color-secondary-bg: #a9c0f0;
+  --color-white: #ffffff;
+  --color-text: #000000;
+  --color-placeholder: #9a9a9a;
+  --color-border: #333333;
+
+  /* Typography */
+  --font-family-base: "Nerko One", sans-serif;
+  --font-size-base: 16px;
+  --font-size-heading: 28px;
+  --font-size-tagline: 50px;
+  --letter-spacing: 1px;
+
+  /* Spacing & Radii */
+  --radius-btn: 8px;
+  --radius-panel: 60px;
+  --btn-height: 60px;
+}
