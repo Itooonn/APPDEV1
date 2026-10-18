@@ -1,7 +1,7 @@
 import style from "./Login.module.css";
 import logo from "../../assets/logo.svg";
 
-export default function Login() {
+export default function Login({ onToggle }) {
     return (
         <div className={style.login}>
             {/* ---------- Left panel ---------- */}
@@ -32,7 +32,16 @@ export default function Login() {
                     <button>Login</button>
 
                     <p className={style.signup}>
-                        Don't have an account? <a href="#">Signup Here</a>
+                        Don't have an account?{" "}
+                        <a
+                            href="#"
+                            onClick={(e) => {
+                                e.preventDefault();
+                                if (onToggle) onToggle();
+                            }}
+                        >
+                            Signup Here
+                        </a>
                     </p>
                 </div>
             </section>
