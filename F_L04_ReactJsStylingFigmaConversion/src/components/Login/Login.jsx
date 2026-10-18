@@ -3,10 +3,10 @@ import logo from "../../assets/logo.svg";
 
 export default function Login() {
     return (
-        <div className="login">
+        <div className={style.login}>
             {/* ---------- Left panel ---------- */}
-            <section className="left">
-                <h1 className="tagline">
+            <section className={style.left}>
+                <h1 className={style.tagline}>
                     Need webdesign
                     <br />
                     for your business?
@@ -16,14 +16,14 @@ export default function Login() {
                     will help you.
                 </h1>
 
-                <img className="logo" src={logo} alt="Design Spacee logo" />
+                <img className={style.logo} src={logo} alt="Design Spacee logo" />
 
-                <p className="link">figma.com/@designspacee</p>
+                <p className={style.link}>figma.com/@designspacee</p>
             </section>
 
             {/* ---------- Right panel ---------- */}
-            <section className="right">
-                <div className="form">
+            <section className={style.right}>
+                <div className={style.form}>
                     <h2>Sign-in</h2>
 
                     <input type="email" placeholder="Email" />
@@ -31,7 +31,7 @@ export default function Login() {
 
                     <button>Login</button>
 
-                    <p className="signup">
+                    <p className={style.signup}>
                         Don't have an account? <a href="#">Signup Here</a>
                     </p>
                 </div>
