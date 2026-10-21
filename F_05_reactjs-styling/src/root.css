@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    --color-primary: #7A999C;
+    --color-secondary: #5F7C8D;
+
+    /* 4B687A - button*/
+
+    /* Typography */
+    --font-main: 'Istok Web', sans-serif;
+}

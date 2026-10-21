@@ -1,0 +1,135 @@
+.login {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.left {
+    flex: 1;
+    overflow: hidden;
+    max-width: 40%;
+}
+
+.left img{
+    height: 100%;
+    width: 100%;
+    /* object-fit: cover; */
+    border-radius: 32px;
+}
+
+.right {
+    flex: 1;
+    --form-width: 70%;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 60%;
+    box-sizing: border-box;
+    /* gap: 32px; */
+}
+
+.navigation {
+    margin-bottom: 124px;
+}
+
+.navigation a {
+    margin-left: 24px;
+    width: 266px;
+    height: 52px;
+    text-decoration: none;
+    color: #5F7C8D;
+    font-weight: 700;
+    font-style: bold;
+    font-size: 36px;
+}
+
+.navigation a.active {
+    color: var(--color-primary);
+    opacity: 100%;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+}
+
+.navigation a:not(.active) {
+    opacity: 55%;
+}
+
+h1 {
+    align-self: stretch;
+    text-align: left;
+    color: var(--color-primary);
+    font-weight: 700;
+    /* font-style: bold; */
+    font-size: 64px;
+    margin-left: 60px;
+    margin-bottom: 32px;
+}
+
+h1 span.highlight {
+    color: var(--color-secondary);
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 48px;
+}
+
+.loginForm {
+    width: var(--form-width);
+}
+
+input {
+    width: 100%;
+    display: block;
+    outline: none;
+    font-size: 24px;
+    color: #5F7C8D8C;
+    border: none;
+    border-bottom: 3px solid #5F7C8D;
+    margin-bottom: 62px;
+}
+
+input::placeholder {
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 24px;
+    color: #5F7C8D8C;
+    opacity: 55%;
+}
+
+.loginButton {
+    width: var(--form-width);
+    font-weight: 700;
+    font-style: bold;
+    font-size: 24px;
+    color: #FFFFFF;
+    background-color: #4B687A;
+}
+
+.loginDivider {
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 24px;
+    color: #5F7C8D8C;
+    opacity: 55%;
+    margin: 36px;
+}
+
+.socialLogin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 52px;
+}
+
+.socialLogin a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.socialLogin a:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
+}
